@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{F4BD9775-CE1B-4052-A2C6-3C0D0D844DA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yu-Gi.Catalog", "Services\Catalog\Yu-Gi.Catalog\Yu-Gi.Catalog.csproj", "{3C960805-C9E9-4833-9E16-7D1745937CB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exodia.Catalog", "Services\Catalog\Yu-Gi.Catalog\Exodia.Catalog.csproj", "{3C960805-C9E9-4833-9E16-7D1745937CB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

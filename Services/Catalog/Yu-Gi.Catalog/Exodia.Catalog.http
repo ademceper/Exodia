@@ -1,0 +1,6 @@
+@Exodia.Catalog_HostAddress = http://localhost:5102
+
+GET {{Exodia.Catalog_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
