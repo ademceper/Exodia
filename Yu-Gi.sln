@@ -5,9 +5,27 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4F4BA50E-18B6-470E-9C58-571CBDEDB23A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{F4BD9775-CE1B-4052-A2C6-3C0D0D844DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yu-Gi.Catalog", "Services\Catalog\Yu-Gi.Catalog\Yu-Gi.Catalog.csproj", "{3C960805-C9E9-4833-9E16-7D1745937CB7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C960805-C9E9-4833-9E16-7D1745937CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C960805-C9E9-4833-9E16-7D1745937CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C960805-C9E9-4833-9E16-7D1745937CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C960805-C9E9-4833-9E16-7D1745937CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4BD9775-CE1B-4052-A2C6-3C0D0D844DA4} = {4F4BA50E-18B6-470E-9C58-571CBDEDB23A}
+		{3C960805-C9E9-4833-9E16-7D1745937CB7} = {F4BD9775-CE1B-4052-A2C6-3C0D0D844DA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16F20F4C-37E1-41D3-A802-39680C6DB1CB}

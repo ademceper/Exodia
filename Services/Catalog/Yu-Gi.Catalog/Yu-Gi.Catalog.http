@@ -1,0 +1,6 @@
+@Yu_Gi.Catalog_HostAddress = http://localhost:5102
+
+GET {{Yu_Gi.Catalog_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
