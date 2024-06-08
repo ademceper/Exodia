@@ -1,6 +1,10 @@
+using Exodia.Discount.Context;
+using Exodia.Discount.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddTransient<AppDbContext>();
+builder.Services.AddTransient<IDiscountService, DiscountService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
