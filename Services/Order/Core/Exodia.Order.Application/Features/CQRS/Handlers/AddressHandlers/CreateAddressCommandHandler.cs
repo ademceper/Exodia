@@ -1,4 +1,5 @@
-﻿using Exodia.Order.Application.Interfaces;
+﻿using Exodia.Order.Application.Features.CQRS.Commands.AddressCommands;
+using Exodia.Order.Application.Interfaces;
 using Exodia.Order.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,16 @@ public class CreateAddressCommandHandler
     public CreateAddressCommandHandler(IRepository<Address> repository)
     {
         _repository = repository;
+    }
+    public async Task Handle(CreateAddressCommand createAddressCommand)
+    {
+        await _repository.CreateAsync(new Address
+        {
+            City = createAddressCommand.City,
+            Detail = createAddressCommand.Detail,
+            District = createAddressCommand.District,
+            UserId = createAddressCommand.UserId
+        });
     }
 
 }
